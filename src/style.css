@@ -276,10 +276,25 @@ footer p {
 	margin-right: 20px;
 }
 
+.social-media {
+	display: flex;
+	width: 27%;
+	height: 3em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
 .social {
 	font-size: 2.5em;
 	color: white;
-	margin-right: 0.5em;
+	text-align: center;
+	transition: all 300ms ease;
+}
+
+.social:hover {
+	font-size: 3em;
+	max-height: 3em;
 }
 
 @media screen and (max-width: 375px) {
@@ -435,10 +450,18 @@ footer p {
 		margin-right: 20px;
 	}
 
+	.social-media {
+		width: 35%;
+	}
+
 	.social {
 		font-size: 2em;
 		color: white;
-		margin-right: 0.5em;
+	}
+
+	.social:hover {
+		font-size: 2.2em;
+		color: white;
 	}
 
 	footer img {

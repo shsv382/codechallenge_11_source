@@ -11,6 +11,7 @@ const StatisticUnit = (props) => {
 				scrollEmersion={props.scrollEmersion}
 				unitEmersion={props.unitEmersion} 
 				index={i}
+				key={`SA-key-${i}`}
 			/>);
 		})
 
