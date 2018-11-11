@@ -10,7 +10,9 @@ class Header extends Component {
 		const header = document.getElementsByTagName("header")[0];
 	    header.style.opacity = 0;
 	    const unitEmersion = this.props.unitEmersion;
-	    unitEmersion(header, 300);
+	    const timer = setTimeout(function() {
+	    	unitEmersion(header, 300);
+	    }, 800);
 	}
 
 	render() {

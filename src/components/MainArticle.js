@@ -11,9 +11,7 @@ class MainArticle extends Component {
 	    article.style.opacity = 0;
 	    const unitEmersion = this.props.unitEmersion;
 	    const scrollEmersion = this.props.scrollEmersion;
-	    const timer = setTimeout(function() {
-		    unitEmersion(article, 500);
-	    }, 400);
+	    unitEmersion(article, 400);
 	    const img = document.getElementsByTagName("img")[1];
 	    scrollEmersion(img, unitEmersion);
 	}
